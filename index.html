@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iVolve | IBM i (AS/400) Experts</title>
+    <meta name="description" content="iVolve upgrades IBM i (AS/400) systems in place — modern RPG, REST APIs, DB2 optimization, and web interfaces. No migration required. Book a discovery call.">
+    <meta name="theme-color" content="#070b14">
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+    <link rel="preload" as="image" href="assets/images/hero-bg.avif" type="image/avif">
+    <link rel="preload" as="image" href="assets/images/hero-bg.webp" type="image/webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">&lt;/&gt;</span>
+                <span class="logo-text"><span class="logo-accent">i</span>Volve</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact" class="nav-cta">Book a Discovery Call</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <picture>
+                <source srcset="assets/images/hero-bg.avif" type="image/avif">
+                <source srcset="assets/images/hero-bg.webp" type="image/webp">
+                <img src="assets/images/hero-bg.png" alt="" class="hero-bg-img" fetchpriority="high">
+            </picture>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="container hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                IBM i (AS/400) Specialists
+            </div>
+            <h1 class="hero-title">
+                Modernize IBM i.<br>
+                <span class="gradient-text">No Migration Required.</span>
+            </h1>
+            <p class="hero-subtitle">
+                Your AS/400 doesn't need replacing — it needs today's technology. We upgrade your platform in place with modern RPG, REST APIs, and web interfaces, protecting the business logic you've refined for decades.
+            </p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">Book a Discovery Call</a>
+                <a href="#projects" class="btn btn-outline">View Our Work</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="50">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Projects Delivered</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="40">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Combined Years on IBM i</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="99.9">0</span><span class="stat-suffix">%</span>
+                    <span class="stat-label">System Uptime</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="12">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Enterprise Clients</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Trust Strip -->
+    <section class="trust-strip">
+        <div class="container">
+            <div class="trust-strip-inner">
+                <p class="trust-title">Trusted across logistics, banking, manufacturing, and supply chain</p>
+                <div class="trust-items">
+                    <div class="trust-item">
+                        <span class="trust-label">Client Sector</span>
+                        <strong>Top 3 EU Logistics Providers</strong>
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-label">Compliance Focus</span>
+                        <strong>ISO 20022 / Audit-Ready Delivery</strong>
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-label">Reliability</span>
+                        <strong>Mission-Critical IBM i Support</strong>
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-label">Certification</span>
+                        <strong>IBM i / DB2-Oriented Expertise</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Who We Are</span>
+                <h2 class="section-title">Decades of IBM i Expertise,<br><span class="gradient-text">One Focused Team</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-content">
+                    <p class="about-lead">
+                        The industry keeps telling you to migrate off the AS/400. We disagree — the platform isn't the problem. It just needs to be brought up to today's capabilities.
+                    </p>
+                    <p>
+                        Modern IBM i speaks REST and JSON natively, runs free-format RPG and SQL services, and powers responsive web interfaces — all on the hardware and business logic you already trust. We upgrade your systems in place, delivering the user experience and connectivity of today without the cost, risk, and disruption of replatforming.
+                    </p>
+                    <p>
+                        Having served major European logistics providers, supply chain operators, and SaaS companies, we understand that your IBM i systems are the backbone of your business. We treat them that way.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <div class="highlight-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            </div>
+                            <div>
+                                <strong>IBM i Certified</strong>
+                                <span>All team members hold IBM certifications</span>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <div class="highlight-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            </div>
+                            <div>
+                                <strong>24/7 Support Available</strong>
+                                <span>Critical system support around the clock</span>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <div class="highlight-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                            </div>
+                            <div>
+                                <strong>Full-Stack Approach</strong>
+                                <span>From DB2 to modern web frontends</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <div class="code-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <span class="code-title">QRPGLESRC/ORDPROC.rpgle</span>
+                        </div>
+                        <pre class="code-body"><code><span class="code-kw">**free</span>
+<span class="code-cm">// Order Processing Module</span>
+<span class="code-kw">dcl-f</span> ORDERF disk usage(*update);
+<span class="code-kw">dcl-f</span> CUSTF  disk usage(*input);
+
+<span class="code-kw">dcl-proc</span> ProcessOrder;
+  <span class="code-kw">dcl-pi</span> *n ind;
+    orderId <span class="code-kw">packed</span>(10:0) <span class="code-kw">const</span>;
+  <span class="code-kw">end-pi</span>;
+
+  <span class="code-kw">dcl-s</span> success ind <span class="code-kw">inz</span>(*on);
+  
+  <span class="code-kw">exec sql</span>
+    <span class="code-str">UPDATE orders 
+     SET status = 'PROCESSED'
+     WHERE order_id = :orderId</span>;
+
+  <span class="code-kw">return</span> success;
+<span class="code-kw">end-proc</span>;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What We Do</span>
+                <h2 class="section-title">Comprehensive IBM i<br><span class="gradient-text">Solutions & Services</span></h2>
+                <p class="section-desc">From in-place modernization to greenfield development — everything your IBM i needs, on the platform you already own.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                    </div>
+                    <h3>RPG & COBOL Development</h3>
+                    <p>Custom business application development in RPG IV Free-Format, RPG/400, and COBOL. We write clean, maintainable code that scales with your business.</p>
+                    <ul class="service-tags">
+                        <li>RPG IV Free</li>
+                        <li>ILE RPG</li>
+                        <li>COBOL</li>
+                        <li>CL</li>
+                    </ul>
+                    <a class="service-link" href="rpg-development.html">Learn more</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12a9 9 0 0 1-9 9m9-9a9 9 0 0 0-9-9m9 9H3m9 9a9 9 0 0 1-9-9m9 9c1.66 0 3-4.03 3-9s-1.34-9-3-9m0 18c-1.66 0-3-4.03-3-9s1.34-9 3-9m-9 9a9 9 0 0 1 9-9"/></svg>
+                    </div>
+                    <h3>Web Integration & APIs</h3>
+                    <p>Connect your IBM i to the modern web. REST APIs, web services, PHP frontends, and JavaScript applications that interface directly with your RPG programs.</p>
+                    <ul class="service-tags">
+                        <li>REST APIs</li>
+                        <li>PHP</li>
+                        <li>Node.js</li>
+                        <li>JSON/XML</li>
+                    </ul>
+                    <a class="service-link" href="as400-api-integration.html">Learn more</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg>
+                    </div>
+                    <h3>System Modernization</h3>
+                    <p>Transform green-screen applications into modern web UIs without losing business logic. We modernize the interface while preserving your proven backend.</p>
+                    <ul class="service-tags">
+                        <li>UI Modernization</li>
+                        <li>Code Refactoring</li>
+                        <li>ILE Migration</li>
+                    </ul>
+                    <a class="service-link" href="ibmi-modernization.html">Learn more</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                    </div>
+                    <h3>DB2 for i Optimization</h3>
+                    <p>Database performance tuning, query optimization, data modeling, and migration. Maximize the power of DB2 for i with expert-level SQL and database design.</p>
+                    <ul class="service-tags">
+                        <li>SQL Optimization</li>
+                        <li>Data Modeling</li>
+                        <li>Performance Tuning</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    </div>
+                    <h3>System Administration</h3>
+                    <p>Complete IBM i system management including security hardening, PTF management, backup strategies, high availability configuration, and capacity planning.</p>
+                    <ul class="service-tags">
+                        <li>Security</li>
+                        <li>HA/DR</li>
+                        <li>Performance</li>
+                        <li>PTF Mgmt</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                    </div>
+                    <h3>Legacy Support & Maintenance</h3>
+                    <p>Ongoing support for existing IBM i applications. Bug fixes, enhancements, documentation, and knowledge transfer. We keep your systems running flawlessly.</p>
+                    <ul class="service-tags">
+                        <li>24/7 Support</li>
+                        <li>Bug Fixes</li>
+                        <li>Documentation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Case Studies</span>
+                <h2 class="section-title">Projects That<br><span class="gradient-text">Drive Results</span></h2>
+                <p class="section-desc">Mini case studies in a consistent delivery model: Challenge → Solution → Impact.</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card project-featured">
+                    <div class="project-meta">
+                        <span class="project-category">Logistics & Supply Chain</span>
+                        <span class="project-year">2023</span>
+                    </div>
+                    <h3>Pan-European WMS Modernization</h3>
+                    <div class="case-structure">
+                        <div class="case-item">
+                            <h4>Challenge</h4>
+                            <p>Legacy RPG/400 warehouse flow was slowing operations across 20+ sites in 14 countries.</p>
+                        </div>
+                        <div class="case-item">
+                            <h4>Solution</h4>
+                            <p>Refactored into ILE RPG modules and rolled out a modern web dashboard over existing business logic.</p>
+                        </div>
+                        <div class="case-item">
+                            <h4>Impact</h4>
+                            <p>Faster processing, zero downtime rollout, and improved operator adoption across regions.</p>
+                        </div>
+                    </div>
+                    <div class="project-results">
+                        <div class="result">
+                            <span class="result-number">40%</span>
+                            <span class="result-label">Faster Processing</span>
+                        </div>
+                        <div class="result">
+                            <span class="result-number">20+</span>
+                            <span class="result-label">Sites Upgraded</span>
+                        </div>
+                        <div class="result">
+                            <span class="result-number">0</span>
+                            <span class="result-label">Downtime Hours</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span>ILE RPG</span><span>DB2</span><span>PHP</span><span>REST APIs</span><span>JavaScript</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-meta">
+                        <span class="project-category">SaaS / ERP</span>
+                        <span class="project-year">2022</span>
+                    </div>
+                    <h3>Multi-Tenant ERP Integration Platform</h3>
+                    <div class="case-structure">
+                        <div class="case-item">
+                            <h4>Challenge</h4>
+                            <p>Client onboarding was slow due to fragmented integrations and tightly coupled legacy interfaces.</p>
+                        </div>
+                        <div class="case-item">
+                            <h4>Solution</h4>
+                            <p>Built a secure REST API layer directly over RPG business services with tenant-aware contracts.</p>
+                        </div>
+                        <div class="case-item">
+                            <h4>Impact</h4>
+                            <p>Onboarding dropped from weeks to days with reusable integration paths for new clients.</p>
+                        </div>
+                    </div>
+                    <div class="project-results">
+                        <div class="result">
+                            <span class="result-number">85%</span>
+                            <span class="result-label">Faster Onboarding</span>
+                        </div>
+                        <div class="result">
+                            <span class="result-number">30+</span>
+                            <span class="result-label">API Endpoints</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span>RPG IV</span><span>SQL</span><span>REST</span><span>JSON</span><span>OAuth 2.0</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-meta">
+                        <span class="project-category">Manufacturing</span>
+                        <span class="project-year">2024</span>
+                    </div>
+                    <h3>Real-Time Production Dashboard</h3>
+                    <div class="case-structure">
+                        <div class="case-item">
+                            <h4>Challenge</h4>
+                            <p>Production KPIs were delayed by manual reports and lacked visibility for plant leadership.</p>
+                        </div>
+                        <div class="case-item">
+                            <h4>Solution</h4>
+                            <p>Integrated IBM i shop-floor datasets into a responsive real-time dashboard for key stakeholders.</p>
+                        </div>
+                        <div class="case-item">
+                            <h4>Impact</h4>
+                            <p>Decision-making moved to real time and reporting overhead dropped significantly.</p>
+                        </div>
+                    </div>
+                    <div class="project-results">
+                        <div class="result">
+                            <span class="result-number">60%</span>
+                            <span class="result-label">Less Reporting Time</span>
+                        </div>
+                        <div class="result">
+                            <span class="result-number">Real-time</span>
+                            <span class="result-label">Data Visibility</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span>RPG</span><span>WebSocket</span><span>Vue.js</span><span>DB2</span><span>Apache</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-meta">
+                        <span class="project-category">Banking</span>
+                        <span class="project-year">2023</span>
+                    </div>
+                    <h3>Legacy COBOL to RPG IV Migration</h3>
+                    <div class="case-structure">
+                        <div class="case-item">
+                            <h4>Challenge</h4>
+                            <p>Regional bank relied on a large COBOL codebase that slowed enhancement and integration cycles.</p>
+                        </div>
+                        <div class="case-item">
+                            <h4>Solution</h4>
+                            <p>Migrated 500K+ lines to RPG IV Free-Format with staged validation and compatibility checks.</p>
+                        </div>
+                        <div class="case-item">
+                            <h4>Impact</h4>
+                            <p>Higher maintainability, modern API compatibility, and faster internal delivery velocity.</p>
+                        </div>
+                    </div>
+                    <div class="project-results">
+                        <div class="result">
+                            <span class="result-number">500K+</span>
+                            <span class="result-label">Lines Migrated</span>
+                        </div>
+                        <div class="result">
+                            <span class="result-number">3x</span>
+                            <span class="result-label">Dev Velocity</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span>COBOL</span><span>RPG IV Free</span><span>SQL</span><span>ILE</span><span>CI/CD</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-meta">
+                        <span class="project-category">Banking</span>
+                        <span class="project-year">2024</span>
+                    </div>
+                    <h3>Core Payment Processing Hub</h3>
+                    <div class="case-structure">
+                        <div class="case-item">
+                            <h4>Challenge</h4>
+                            <p>Payment engine complexity created settlement delays and operational risk at high transaction volume.</p>
+                        </div>
+                        <div class="case-item">
+                            <h4>Solution</h4>
+                            <p>Consolidated fragmented RPG modules into unified ILE service programs with monitoring hooks.</p>
+                        </div>
+                        <div class="case-item">
+                            <h4>Impact</h4>
+                            <p>Faster settlement and stable throughput for 2M+ daily transactions.</p>
+                        </div>
+                    </div>
+                    <div class="project-results">
+                        <div class="result">
+                            <span class="result-number">2M+</span>
+                            <span class="result-label">Daily Transactions</span>
+                        </div>
+                        <div class="result">
+                            <span class="result-number">45%</span>
+                            <span class="result-label">Faster Settlement</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span>ILE RPG</span><span>DB2</span><span>MQ</span><span>SEPA</span><span>SQL</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-meta">
+                        <span class="project-category">Banking</span>
+                        <span class="project-year">2023</span>
+                    </div>
+                    <h3>SEPA & Instant Payments Gateway</h3>
+                    <div class="case-structure">
+                        <div class="case-item">
+                            <h4>Challenge</h4>
+                            <p>Legacy ledger systems needed compliant real-time connectivity to EU clearing channels.</p>
+                        </div>
+                        <div class="case-item">
+                            <h4>Solution</h4>
+                            <p>Delivered SEPA and instant-payments integration services with traceable end-to-end audit events.</p>
+                        </div>
+                        <div class="case-item">
+                            <h4>Impact</h4>
+                            <p>24/7 clearing reliability with ISO 20022-aligned message handling.</p>
+                        </div>
+                    </div>
+                    <div class="project-results">
+                        <div class="result">
+                            <span class="result-number">24/7</span>
+                            <span class="result-label">Clearing Uptime</span>
+                        </div>
+                        <div class="result">
+                            <span class="result-number">ISO 20022</span>
+                            <span class="result-label">Compliant</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span>RPG IV</span><span>REST APIs</span><span>XML</span><span>JSON</span><span>TLS</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-meta">
+                        <span class="project-category">Banking</span>
+                        <span class="project-year">2022</span>
+                    </div>
+                    <h3>AML & Regulatory Reporting Platform</h3>
+                    <div class="case-structure">
+                        <div class="case-item">
+                            <h4>Challenge</h4>
+                            <p>Compliance teams were overwhelmed by manual reporting and fragmented detection workflows.</p>
+                        </div>
+                        <div class="case-item">
+                            <h4>Solution</h4>
+                            <p>Built automated AML and regulatory reporting dashboards fed directly by IBM i core banking data.</p>
+                        </div>
+                        <div class="case-item">
+                            <h4>Impact</h4>
+                            <p>Reduced manual compliance work and expanded auditable trace coverage.</p>
+                        </div>
+                    </div>
+                    <div class="project-results">
+                        <div class="result">
+                            <span class="result-number">70%</span>
+                            <span class="result-label">Less Manual Work</span>
+                        </div>
+                        <div class="result">
+                            <span class="result-number">100%</span>
+                            <span class="result-label">Audit Trail Coverage</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span>DB2</span><span>SQL</span><span>PHP</span><span>JavaScript</span><span>RPG</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-meta">
+                        <span class="project-category">Banking</span>
+                        <span class="project-year">2024</span>
+                    </div>
+                    <h3>Digital Loan Origination System</h3>
+                    <div class="case-structure">
+                        <div class="case-item">
+                            <h4>Challenge</h4>
+                            <p>Loan approvals were slowed by green-screen workflows and disconnected front-office experience.</p>
+                        </div>
+                        <div class="case-item">
+                            <h4>Solution</h4>
+                            <p>Delivered a modern loan portal while preserving RPG-based scoring and approval rules on IBM i.</p>
+                        </div>
+                        <div class="case-item">
+                            <h4>Impact</h4>
+                            <p>Faster approvals and shorter average processing time without a high-risk core rewrite.</p>
+                        </div>
+                    </div>
+                    <div class="project-results">
+                        <div class="result">
+                            <span class="result-number">55%</span>
+                            <span class="result-label">Faster Approvals</span>
+                        </div>
+                        <div class="result">
+                            <span class="result-number">3 days</span>
+                            <span class="result-label">Avg. Processing Time</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span>RPG IV</span><span>Apache</span><span>HTML5</span><span>REST</span><span>DB2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="section team" id="team">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our People</span>
+                <h2 class="section-title">Senior Engineers,<br><span class="gradient-text">Proven Track Records</span></h2>
+                <p class="section-desc">Founder-led by Oliviu (7+ years) and supported by senior specialists with 10+ years in architecture, DB2, and IBM i operations.</p>
+            </div>
+            <div class="founder-strip">
+                <div class="founder-strip-head">
+                    <h3>Founder Credibility</h3>
+                    <p>Hands-on delivery ownership from discovery to production rollout.</p>
+                </div>
+                <div class="founder-points">
+                    <div class="founder-point">
+                        <strong>IBM i Delivery</strong>
+                        <span>Production-grade RPG, CL, and DB2 execution in enterprise environments.</span>
+                    </div>
+                    <div class="founder-point">
+                        <strong>RPG Modernization</strong>
+                        <span>Refactoring and modernization strategies that avoid risky full rewrites.</span>
+                    </div>
+                    <div class="founder-point">
+                        <strong>Web Integration</strong>
+                        <span>Modern API and frontend layers connected to reliable IBM i backend logic.</span>
+                    </div>
+                </div>
+                <div class="founder-languages">
+                    <span>Languages:</span>
+                    <strong>EN / FR / RO</strong>
+                </div>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-photo">
+                        <picture>
+                            <source srcset="assets/images/team-lead.avif" type="image/avif">
+                            <source srcset="assets/images/team-lead.webp" type="image/webp">
+                            <img src="assets/images/team-lead.png" alt="Oliviu V. - Founder and Lead Developer at iVolve" loading="lazy" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="team-info">
+                        <h3>Oliviu V.</h3>
+                        <span class="team-role">Founder & Lead Developer</span>
+                        <p>7+ years in IBM i development. Full-stack specialist bridging RPG business logic with modern web interfaces.</p>
+                        <div class="team-skills">
+                            <span>RPG IV</span><span>PHP</span><span>JavaScript</span><span>DB2</span><span>Apache</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-photo">
+                        <picture>
+                            <source srcset="assets/images/team-arch.avif" type="image/avif">
+                            <source srcset="assets/images/team-arch.webp" type="image/webp">
+                            <img src="assets/images/team-arch.png" alt="Andrei M. - IBM i Solutions Architect" loading="lazy" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="team-info">
+                        <h3>Andrei M.</h3>
+                        <span class="team-role">Solutions Architect</span>
+                        <p>15+ years designing IBM i architectures for enterprise clients. Expert in ILE program design, service programs, and system-level optimization for high-throughput environments.</p>
+                        <div class="team-skills">
+                            <span>ILE Architecture</span><span>System Design</span><span>CL</span><span>Performance</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-photo">
+                        <picture>
+                            <source srcset="assets/images/team-dba.avif" type="image/avif">
+                            <source srcset="assets/images/team-dba.webp" type="image/webp">
+                            <img src="assets/images/team-dba.png" alt="Elena S. - DB2 for i Database Lead" loading="lazy" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="team-info">
+                        <h3>Elena S.</h3>
+                        <span class="team-role">Database Lead</span>
+                        <p>12+ years specializing in DB2 for i. From complex query optimization to data warehouse design, she ensures your data layer performs at its absolute best.</p>
+                        <div class="team-skills">
+                            <span>DB2 for i</span><span>SQL</span><span>Data Modeling</span><span>Performance</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-photo">
+                        <picture>
+                            <source srcset="assets/images/team-senior.avif" type="image/avif">
+                            <source srcset="assets/images/team-senior.webp" type="image/webp">
+                            <img src="assets/images/team-senior.png" alt="Marcus D. - Senior IBM i Consultant" loading="lazy" decoding="async">
+                        </picture>
+                    </div>
+                    <div class="team-info">
+                        <h3>Marcus D.</h3>
+                        <span class="team-role">Senior Consultant</span>
+                        <p>18+ years in IBM i systems administration and development. Specializes in security hardening, HA/DR solutions, and large-scale migration projects.</p>
+                        <div class="team-skills">
+                            <span>System Admin</span><span>Security</span><span>HA/DR</span><span>Migration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Client Feedback</span>
+                <h2 class="section-title">Trusted by<br><span class="gradient-text">Industry Leaders</span></h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <blockquote>"iVolve modernized our entire warehouse system without a single minute of downtime. Their understanding of both the AS/400 platform and modern web tech is unmatched. They turned a 20-year-old green screen into something our team actually enjoys using."</blockquote>
+                    <div class="testimonial-author">
+                        <strong>Jean-Pierre Dubois</strong>
+                        <span>VP of IT, European Logistics Corp.</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <blockquote>"We were struggling to find IBM i developers who truly understand enterprise-scale operations. iVolve not only delivered our API integration project ahead of schedule but also improved our existing RPG code performance by 3x."</blockquote>
+                    <div class="testimonial-author">
+                        <strong>Stefan Andersen</strong>
+                        <span>CTO, NordSupply Solutions</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <blockquote>"The migration from COBOL to RPG IV was the most complex project we've ever undertaken. iVolve handled it with surgical precision — 500K lines migrated, zero data loss, and our development velocity tripled overnight."</blockquote>
+                    <div class="testimonial-author">
+                        <strong>Maria Kontos</strong>
+                        <span>Director of Engineering, FinServ International</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="section tech-stack">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Technology</span>
+                <h2 class="section-title">Our<br><span class="gradient-text">Technology Stack</span></h2>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-category">
+                    <h4>IBM i Core</h4>
+                    <div class="tech-items">
+                        <div class="tech-item">RPG IV Free-Format</div>
+                        <div class="tech-item">ILE RPG</div>
+                        <div class="tech-item">COBOL</div>
+                        <div class="tech-item">CL Programming</div>
+                        <div class="tech-item">DB2 for i</div>
+                        <div class="tech-item">SQL/400</div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h4>Web & Integration</h4>
+                    <div class="tech-items">
+                        <div class="tech-item">PHP</div>
+                        <div class="tech-item">JavaScript / ES6+</div>
+                        <div class="tech-item">HTML5 / CSS3</div>
+                        <div class="tech-item">REST APIs</div>
+                        <div class="tech-item">Apache HTTP Server</div>
+                        <div class="tech-item">Node.js</div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h4>Tools & Practices</h4>
+                    <div class="tech-items">
+                        <div class="tech-item">Git / ARCAD</div>
+                        <div class="tech-item">CI/CD Pipelines</div>
+                        <div class="tech-item">IBM ACS</div>
+                        <div class="tech-item">RDi (Rational)</div>
+                        <div class="tech-item">IBM Navigator</div>
+                        <div class="tech-item">LPAR Management</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Engagement Model Section -->
+    <section class="section engagement-model" id="engagement">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">How We Engage</span>
+                <h2 class="section-title">Flexible Delivery<br><span class="gradient-text">Built Around Your Team</span></h2>
+            </div>
+            <div class="engagement-grid">
+                <article class="engagement-card">
+                    <h3>Fixed-Scope Delivery</h3>
+                    <p>Best for clearly defined modernization or integration projects with agreed milestones, timeline, and outputs.</p>
+                    <ul>
+                        <li>Requirements and architecture upfront</li>
+                        <li>Milestone-based execution plan</li>
+                        <li>Predictable budget and delivery windows</li>
+                    </ul>
+                </article>
+                <article class="engagement-card">
+                    <h3>Retainer Advisory</h3>
+                    <p>Best for ongoing roadmap work, technical leadership, and continuous IBM i optimization across departments.</p>
+                    <ul>
+                        <li>Priority access to senior expertise</li>
+                        <li>Continuous modernization guidance</li>
+                        <li>Monthly strategy and risk reviews</li>
+                    </ul>
+                </article>
+                <article class="engagement-card">
+                    <h3>Staff Augmentation</h3>
+                    <p>Best when your internal team needs immediate IBM i capacity for delivery, migration, or support operations.</p>
+                    <ul>
+                        <li>Embedded collaboration model</li>
+                        <li>Hands-on RPG and DB2 delivery</li>
+                        <li>Knowledge transfer built-in</li>
+                    </ul>
+                </article>
+            </div>
+            <div class="proof-assets">
+                <a href="assets/docs/ivolve-one-pager.pdf" class="btn btn-outline" download>Download One-Pager (PDF)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-tag">Let's Talk</span>
+                    <h2 class="section-title">Ready to Modernize<br><span class="gradient-text">Your IBM i?</span></h2>
+                    <p>Whether you need a full system overhaul, targeted modernization, or senior support for IBM i delivery, we will respond within 24 hours with concrete next steps.</p>
+                    <div class="contact-cta-group">
+                        <a href="https://calendly.com/your-handle/discovery-call" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Book a Discovery Call</a>
+                        <a href="#projects" class="btn btn-outline">See Case Studies</a>
+                    </div>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg>
+                            <span>contact@ivolve.dev</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span>Cluj-Napoca, Romania</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            <span>+40744804620</span>
+                        </div>
+                    </div>
+                    <div class="contact-languages">
+                        <span>Languages</span>
+                        <div class="lang-tags">
+                            <span>English</span>
+                            <span>French</span>
+                            <span>Romanian</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm" method="POST" action="https://formspree.io/f/xojobvqz" data-form-endpoint="https://formspree.io/f/xojobvqz">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Smith">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Work Email</label>
+                        <input type="email" id="email" name="email" required placeholder="john@company.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company" placeholder="Your Company Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">What do you need?</label>
+                        <select id="service" name="service">
+                            <option value="">Select a service...</option>
+                            <option value="modernization">System Modernization</option>
+                            <option value="development">Custom Development</option>
+                            <option value="integration">Web Integration / APIs</option>
+                            <option value="migration">Code Migration</option>
+                            <option value="support">Ongoing Support</option>
+                            <option value="consulting">General Consulting</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Tell us about your project</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Describe your IBM i challenges, timeline, and goals..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Book a Discovery Call</button>
+                    <p class="form-status" id="formStatus" aria-live="polite"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <!-- Cookie Notice -->
+    <div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookie notice">
+        <p>We use essential cookies to keep this site secure and optional analytics cookies to improve service quality.</p>
+        <div class="cookie-actions">
+            <button class="btn btn-outline cookie-btn" id="cookieDecline" type="button">Decline Optional</button>
+            <button class="btn btn-primary cookie-btn" id="cookieAccept" type="button">Accept</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">&lt;/&gt;</span>
+                        <span class="logo-text"><span class="logo-accent">i</span>Volve</span>
+                    </a>
+                    <p>Founder-led IBM i consultancy delivering enterprise-grade modernization, integration, and support across Europe.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">RPG Development</a></li>
+                        <li><a href="#services">Web Integration</a></li>
+                        <li><a href="#services">System Modernization</a></li>
+                        <li><a href="#services">DB2 Optimization</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#projects">Case Studies</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="ibmi-modernization.html">IBM i Modernization</a></li>
+                        <li><a href="rpg-development.html">RPG Development</a></li>
+                        <li><a href="as400-api-integration.html">AS/400 API Integration</a></li>
+                        <li><a href="assets/docs/ivolve-one-pager.pdf" download>One-Pager (PDF)</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-compliance">
+                <p><strong>Company Registration:</strong> iVolve SRL, Cluj-Napoca, Romania. Registration and VAT details available on request.</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2019&ndash;2026 iVolve. All rights reserved.</p>
+                <p>IBM i | AS/400 | iSeries Specialists</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
