@@ -205,17 +205,17 @@ h1, h2, h3, h4 {
 
 .logo {
     display: flex;
-    align-items: center;
-    gap: 11px;
+    align-items: flex-end;
+    gap: 3px;
     text-decoration: none;
     color: var(--text-primary);
 }
 
-.logo-mark {
-    width: 40px;
-    height: 40px;
-    border-radius: var(--radius-sm);
-    object-fit: cover;
+.logo-i {
+    height: 34px;
+    width: auto;
+    display: block;
+    margin-bottom: 1px;
 }
 
 .logo-icon {
@@ -235,9 +235,10 @@ h1, h2, h3, h4 {
 
 .logo-text {
     font-family: var(--font-display);
-    font-size: 1.22rem;
+    font-size: 1.45rem;
     font-weight: 700;
     letter-spacing: -0.02em;
+    line-height: 1;
 }
 
 .logo-accent {
