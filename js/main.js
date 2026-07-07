@@ -515,7 +515,7 @@ function initContactForm() {
 
             status.textContent = 'Thanks. Your request was sent successfully.';
             status.classList.add('success');
-            btn.textContent = 'Request Sent';
+            btn.textContent = 'Message Sent';
             form.reset();
         } catch (error) {
             status.textContent = 'Submission failed. Please retry or email contact@ivolve.dev.';
