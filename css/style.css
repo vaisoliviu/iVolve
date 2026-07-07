@@ -612,6 +612,16 @@ h1, h2, h3, h4 {
     color: var(--accent-secondary);
 }
 
+.trust-icon picture {
+    display: flex;
+}
+
+.trust-icon img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
 .trust-logo-copy {
     min-width: 0;
 }
