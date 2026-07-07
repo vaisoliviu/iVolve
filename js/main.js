@@ -249,8 +249,8 @@ function initScrollAnimations() {
         });
     });
 
-    // Trust strip items
-    gsap.utils.toArray('.trust-item').forEach((item, i) => {
+    // Trust strip logos
+    gsap.utils.toArray('.trust-logo').forEach((item, i) => {
         gsap.from(item, {
             scrollTrigger: {
                 trigger: item,
