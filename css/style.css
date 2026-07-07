@@ -1158,6 +1158,12 @@ h1, h2, h3, h4 {
     object-position: center 20%;
 }
 
+.team-photo-founder img {
+    object-position: center 15%;
+    transform: scale(1.1);
+    transform-origin: center 20%;
+}
+
 .team-info h3 {
     font-size: 1.12rem;
     margin-bottom: 3px;
